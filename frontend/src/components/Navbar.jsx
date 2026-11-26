@@ -10,6 +10,7 @@ export default function Navbar({ nom, theme, onToggleTheme }) {
         <NavLink to="/projets">Projets</NavLink>
         <NavLink to="/competences">Compétences</NavLink>
         <NavLink to="/parcours">Parcours</NavLink>
+        <NavLink to="/a-propos">À propos</NavLink>
         <button
           className="theme-toggle"
           type="button"

@@ -4,6 +4,18 @@
   "accroche": "Je pilote des projets numériques et énergétiques pour le bâtiment.",
   "github": "https://github.com/kodashiq",
   "linkedin": "https://www.linkedin.com/in/amadou-fofana9/",
+  "email": "Amadou.fofana92@outlook.fr",
   "cv": "/cv-amadou-fofana.pdf",
-  "disponibilite": "Recherche alternance — Master SGB ESIEE-IT, 2025–2027"
+  "disponibilite": "Recherche alternance — Master SGB ESIEE-IT, 2025–2027",
+  "apropos": [
+    "J'interviens à l'intersection du bâtiment, de l'énergie et du numérique. Mon parcours couvre la gestion de projets photovoltaïques, le renouvellement des installations CVC, les audits et l'optimisation des consommations.",
+    "Actuellement en Master Smart & Green Building à ESIEE-IT, je recherche une alternance pour mettre mes compétences techniques et ma rigueur au service de solutions durables et connectées.",
+    "Curieux, autonome et à l'aise en équipe, j'aime comprendre les besoins terrain avant de proposer une solution adaptée."
+  ],
+  "langues": [
+    { "langue": "Français", "niveau": "C2 — maîtrise" },
+    { "langue": "Anglais", "niveau": "B2 — niveau avancé" }
+  ],
+  "interets": ["Formula 1", "Hardware informatique", "Séries"],
+  "habilitations": ["BR", "B1V"]
 }

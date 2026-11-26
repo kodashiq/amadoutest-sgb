@@ -61,8 +61,20 @@ Ajoute le filtre `?tag=IoT`, renvoie 404 pour un projet inconnu et crée `backen
 
 Montre son utilisation dans une page React avec trois états : chargement, erreur et données.
 
-## Mode sombre
+## P8 — Images et CV
 
-À partir du contexte P0, ajoute un hook React `useTheme` qui initialise le thème depuis `localStorage`, puis utilise les préférences système uniquement si aucune valeur n'est enregistrée.
+Dans le contexte P0, affiche une image en haut de chaque carte projet.
 
-Le thème sélectionné doit être appliqué à `document.documentElement.dataset.theme` et conservé dans `localStorage`. Ajouter un bouton accessible dans la barre de navigation.
+Utilise les champs `image` et `imageAlt` du JSON. Place les médias dans `frontend/public/images/projets/` et limite chaque image à 200 Ko environ. Utilise `alt`, `width`, `height` et `loading="lazy"`. Pour le CV, place `cv-amadou-fofana.pdf` dans `public/`, ajoute le champ `cv` au profil et un lien avec `download`.
+
+## P9 — Recherche dans les projets
+
+Dans la page `frontend/src/pages/Projets.jsx`, ajoute un champ contrôlé qui filtre simultanément par titre, résumé, tags et technologies sans tenir compte des majuscules. Combine cette recherche au filtre par tag déjà présent. Propose aussi un tri par année. Si aucun projet n'est trouvé, affiche « Aucun projet ne correspond à votre recherche. »
+
+## P10 — Mode sombre
+
+À partir du contexte P0, ajoute un bouton accessible clair/sombre dans la Navbar. Utilise les variables CSS existantes dans `:root`, applique `data-theme="sombre"` sur `<html>`, mémorise le choix dans `localStorage` et suis la préférence système au premier chargement. Garde le hook dans `frontend/src/hooks/useTheme.js`.
+
+## P11 — Page À propos
+
+Ajoute la route `/a-propos` dans React Router. Charge les informations publiques du profil depuis `/api/profil` et la frise depuis `/api/parcours`. Affiche les paragraphes `apropos`, les langues, les centres d'intérêt et les habilitations. Utilise uniquement les données publiques : pas d'adresse postale ni de téléphone dans le CV ou la page.

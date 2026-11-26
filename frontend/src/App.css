@@ -614,6 +614,88 @@
   text-decoration: none;
 }
 
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+.recherche {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.recherche label,
+.tri {
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  font-weight: 650;
+}
+
+.outils-projets {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.tri {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tri select {
+  min-height: 38px;
+  padding: 6px 10px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background: var(--color-surface);
+  color: var(--color-text);
+  font: inherit;
+}
+
+.apropos {
+  display: grid;
+  gap: 16px;
+}
+
+.avatar {
+  display: grid;
+  width: 112px;
+  height: 112px;
+  place-items: center;
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+  background: var(--color-accent-light);
+  color: var(--color-accent);
+  font-size: 2.25rem;
+  font-weight: 800;
+}
+
+.apropos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+  gap: 20px;
+  margin: 12px 0 20px;
+}
+
+.apropos-list {
+  display: grid;
+  gap: 10px;
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+  color: var(--color-muted);
+}
+
+.apropos-grid .tags {
+  margin-top: 16px;
+}
+
 @media (max-width: 600px) {
   .container {
     width: min(100% - 36px, 1120px);
