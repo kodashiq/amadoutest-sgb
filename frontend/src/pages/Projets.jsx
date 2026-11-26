@@ -22,6 +22,7 @@ export default function Projets() {
   if (!projets) return <Etat loading={loading} error={error} />
 
   const tags = [...new Set(projets.flatMap((projet) => projet.tags))].sort()
+  const motsCles = [...new Set(projets.flatMap((projet) => [...(projet.tags ?? []), ...(projet.technos ?? [])]))].sort()
   const mot = recherche.trim().toLowerCase()
   const visibles = projets
     .filter((projet) => tagActif === 'Tous' || projet.tags.includes(tagActif))
@@ -35,7 +36,7 @@ export default function Projets() {
         description="Projets d'Amadou Fofana en bâtiment intelligent, énergie et gestion de projet."
       />
       <h1 className="section-title">Projets</h1>
-      <BarreRecherche valeur={recherche} onChange={setRecherche} />
+      <BarreRecherche valeur={recherche} onChange={setRecherche} motsCles={motsCles} />
       <div className="outils-projets">
         <FiltreTags tags={tags} actif={tagActif} onChange={setTagActif} />
         <label className="tri">

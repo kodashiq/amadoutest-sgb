@@ -648,9 +648,44 @@
 }
 
 .recherche {
+  position: relative;
   display: grid;
   gap: 8px;
   margin-bottom: 16px;
+}
+
+.suggestions-recherche {
+  position: absolute;
+  z-index: 2;
+  top: calc(100% - 8px);
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 12px;
+  list-style: none;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  background: var(--color-surface);
+  box-shadow: var(--shadow-card);
+}
+
+.suggestions-recherche button {
+  padding: 6px 10px;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  background: var(--color-background);
+  color: var(--color-text);
+  font: inherit;
+  cursor: pointer;
+}
+
+.suggestions-recherche button:hover,
+.suggestions-recherche button:focus-visible {
+  border-color: var(--color-accent);
+  outline: 2px solid var(--color-accent-light);
 }
 
 .recherche label,

@@ -18,6 +18,9 @@ export default function Accueil({ profil }) {
     ...(projet.technos ?? []),
   ].join(' ').toLowerCase().includes(mot))
   const projetsAffiches = mot ? projetsVisibles : projetsVisibles?.slice(0, 3)
+  const motsCles = projets
+    ? [...new Set(projets.flatMap((projet) => [...(projet.tags ?? []), ...(projet.technos ?? [])]))].sort()
+    : []
 
   return (
     <>
@@ -34,7 +37,7 @@ export default function Accueil({ profil }) {
           </div>
           <Link className="voir-projets" to="/projets">Voir tous les projets →</Link>
         </div>
-        <BarreRecherche valeur={recherche} onChange={setRecherche} />
+        <BarreRecherche valeur={recherche} onChange={setRecherche} motsCles={motsCles} />
         {!projets && <Etat loading={loading} error={error} />}
         {projets && (
           <>
