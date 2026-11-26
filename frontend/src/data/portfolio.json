@@ -1,25 +1,71 @@
 {
   "profil": {
-    "nom": "Camille Durand",
-    "titre": "Manager en ingénierie informatique — Smart & Green Building",
-    "accroche": "Je relie le numérique et le bâtiment.",
-    "github": "https://github.com/camille-durand",
-    "disponibilite": "Alternance M2 SGB — ESIEE-IT, 2025–2027"
+    "nom": "Amadou Fofana",
+    "titre": "Chargé de projet — Smart & Green Building",
+    "accroche": "Je pilote des projets numériques et énergétiques pour le bâtiment.",
+    "github": "https://github.com/kodashiq",
+    "cv": "/cv-amadou-fofana.pdf",
+    "disponibilite": "Recherche alternance — Master SGB ESIEE-IT, 2025–2027"
   },
   "projets": [
     {
       "slug": "capteurs-co2",
       "titre": "Capteurs CO₂ & confort",
-      "resume": "Réseau LoRaWAN : CO₂, température, humidité, 12 salles.",
+      "resume": "Réseau LoRaWAN de suivi du CO₂, de la température et de l'humidité dans 12 salles.",
       "tags": ["IoT", "Data"],
       "annee": 2026,
-      "technos": ["LoRaWAN", "MQTT", "Python"]
+      "technos": ["LoRaWAN", "MQTT", "Python"],
+      "image": "/images/projets/capteurs-co2.svg",
+      "imageAlt": "Schéma illustrant un réseau de capteurs CO₂"
+    },
+    {
+      "slug": "photovoltaïque-batiment",
+      "titre": "Gestion de projet photovoltaïque",
+      "resume": "Pilotage d'un projet photovoltaïque : planning, acteurs, suivi budgétaire et coordination technique.",
+      "tags": ["Énergie", "Projet"],
+      "annee": 2025,
+      "technos": ["Revit", "Suivi de projet", "Budget"],
+      "image": "/images/projets/photovoltaïque-batiment.svg",
+      "imageAlt": "Illustration d'un projet photovoltaïque sur bâtiment"
+    },
+    {
+      "slug": "renouvellement-cvc",
+      "titre": "Renouvellement des installations CVC",
+      "resume": "Gestion du renouvellement CVC, suivi de chantier, analyse des besoins et coordination des intervenants.",
+      "tags": ["BIM", "Énergie"],
+      "annee": 2025,
+      "technos": ["GTB / BMS", "CVC", "Revit"],
+      "image": "/images/projets/renouvellement-cvc.svg",
+      "imageAlt": "Illustration d'une installation CVC intelligente"
     }
   ],
   "competences": [
     {
       "groupe": "Smart Building",
-      "items": [{ "nom": "GTB / BMS", "niveau": 3 }]
+      "items": [
+        { "nom": "GTB / BMS", "niveau": 3 },
+        { "nom": "KNX", "niveau": 3 },
+        { "nom": "Revit", "niveau": 3 },
+        { "nom": "Réseaux connectés", "niveau": 2 }
+      ]
+    },
+    {
+      "groupe": "Gestion de projet",
+      "items": [
+        { "nom": "Lancement de projet", "niveau": 3 },
+        { "nom": "Suivi de projet", "niveau": 3 },
+        { "nom": "Planification", "niveau": 3 },
+        { "nom": "Budget", "niveau": 2 }
+      ]
+    },
+    {
+      "groupe": "Énergie & techniques",
+      "items": [
+        { "nom": "Photovoltaïque", "niveau": 3 },
+        { "nom": "CVC", "niveau": 3 },
+        { "nom": "Câblage électrique", "niveau": 3 },
+        { "nom": "Réseaux informatiques", "niveau": 2 }
+      ]
     }
   ]
 }
