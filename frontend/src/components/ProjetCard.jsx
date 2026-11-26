@@ -1,3 +1,5 @@
+import { Link } from 'react-router'
+
 export default function ProjetCard({ projet }) {
   const { titre, resume, tags, annee, technos, image, imageAlt } = projet
 
@@ -14,7 +16,7 @@ export default function ProjetCard({ projet }) {
         />
       )}
       <div className="projet-head">
-        <h3>{titre}</h3>
+        <h3><Link to={`/projets/${projet.slug}`}>{titre}</Link></h3>
         <span className="annee">{annee}</span>
       </div>
       <p>{resume}</p>

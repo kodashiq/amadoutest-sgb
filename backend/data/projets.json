@@ -1,0 +1,35 @@
+[
+  {
+    "slug": "capteurs-co2",
+    "titre": "Capteurs CO₂ & confort",
+    "resume": "Réseau LoRaWAN de suivi du CO₂, de la température et de l'humidité dans 12 salles.",
+    "contexte": "Suivre le confort intérieur et exploiter des données issues de capteurs répartis dans plusieurs salles.",
+    "realisations": ["Choix des capteurs et du réseau LoRaWAN", "Paramétrage du protocole MQTT", "Analyse des mesures de CO₂, température et humidité"],
+    "resultat": "Dispositif connecté capable de suivre 12 salles et d'identifier les périodes de forte occupation.",
+    "tags": ["IoT", "Data"], "annee": 2026,
+    "technos": ["LoRaWAN", "MQTT", "Python"],
+    "image": "/images/projets/capteurs-co2.svg", "imageAlt": "Schéma illustrant un réseau de capteurs CO₂"
+  },
+  {
+    "slug": "photovoltaïque-batiment",
+    "titre": "Gestion de projet photovoltaïque",
+    "resume": "Pilotage d'un projet photovoltaïque : planning, acteurs, suivi budgétaire et coordination technique.",
+    "contexte": "Accompagner un projet photovoltaïque dans sa mise en œuvre technique et son suivi de gestion.",
+    "realisations": ["Planification des phases du projet", "Suivi des acteurs et des décisions", "Contrôle budgétaire et coordination technique"],
+    "resultat": "Organisation structurée du projet avec un suivi partagé des délais, du budget et des livrables.",
+    "tags": ["Énergie", "Projet"], "annee": 2025,
+    "technos": ["Revit", "Suivi de projet", "Budget"],
+    "image": "/images/projets/photovoltaïque-batiment.svg", "imageAlt": "Illustration d'un projet photovoltaïque sur bâtiment"
+  },
+  {
+    "slug": "renouvellement-cvc",
+    "titre": "Renouvellement des installations CVC",
+    "resume": "Gestion du renouvellement CVC, suivi de chantier, analyse des besoins et coordination des intervenants.",
+    "contexte": "Moderniser des installations CVC tout en limitant les interruptions d'exploitation du bâtiment.",
+    "realisations": ["Analyse des besoins et des contraintes du bâtiment", "Suivi des travaux et des intervenants", "Vérification des performances et du bon fonctionnement"],
+    "resultat": "Renouvellement organisé des équipements avec un meilleur suivi technique et énergétique.",
+    "tags": ["BIM", "Énergie"], "annee": 2025,
+    "technos": ["GTB / BMS", "CVC", "Revit"],
+    "image": "/images/projets/renouvellement-cvc.svg", "imageAlt": "Illustration d'une installation CVC intelligente"
+  }
+]
