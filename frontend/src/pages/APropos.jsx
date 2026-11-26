@@ -14,7 +14,7 @@ export default function APropos({ profil }) {
     <section className="page-section apropos">
       <PageMeta
         titre="À propos"
-        description="Profil, langues, habilitations et centres d'intérêt d'Amadou Fofana."
+        description="Profil, parcours, langues, compétences et centres d'intérêt d'Amadou Fofana."
       />
       <div className="avatar" aria-label={`Portrait professionnel de ${profil.nom}`}>{initiales}</div>
       <h1 className="section-title">À propos</h1>
@@ -35,11 +35,11 @@ export default function APropos({ profil }) {
             {(profil.interets ?? []).map((interet) => <li className="tag" key={interet}>{interet}</li>)}
           </ul>
         </div>
-        {profil.habilitations && (
+        {profil.permis && (
           <div className="card">
-            <h2>Habilitations</h2>
+            <h2>Permis</h2>
             <ul className="apropos-list">
-              {profil.habilitations.map((habilitation) => <li key={habilitation}>{habilitation}</li>)}
+              <li>Permis {profil.permis}</li>
             </ul>
           </div>
         )}
