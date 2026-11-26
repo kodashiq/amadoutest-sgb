@@ -1,6 +1,7 @@
 import useApi from '../hooks/useApi.js'
 import Etat from '../components/Etat.jsx'
 import Timeline from '../components/Timeline.jsx'
+import PageMeta from '../components/PageMeta.jsx'
 
 export default function APropos({ profil }) {
   const { data: parcours, loading, error } = useApi('/api/parcours')
@@ -11,6 +12,10 @@ export default function APropos({ profil }) {
 
   return (
     <section className="page-section apropos">
+      <PageMeta
+        titre="À propos"
+        description="Profil, langues, habilitations et centres d'intérêt d'Amadou Fofana."
+      />
       <div className="avatar" aria-label={`Portrait professionnel de ${profil.nom}`}>{initiales}</div>
       <h1 className="section-title">À propos</h1>
       {(profil.apropos ?? []).map((texte) => <p key={texte}>{texte}</p>)}

@@ -4,6 +4,7 @@ import Etat from '../components/Etat.jsx'
 import BarreRecherche from '../components/BarreRecherche.jsx'
 import FiltreTags from '../components/FiltreTags.jsx'
 import ProjetCard from '../components/ProjetCard.jsx'
+import PageMeta from '../components/PageMeta.jsx'
 
 const texteDe = (projet) => [
   projet.titre,
@@ -29,6 +30,10 @@ export default function Projets() {
 
   return (
     <section className="page-section">
+      <PageMeta
+        titre="Projets"
+        description="Projets d'Amadou Fofana en bâtiment intelligent, énergie et gestion de projet."
+      />
       <h1 className="section-title">Projets</h1>
       <BarreRecherche valeur={recherche} onChange={setRecherche} />
       <div className="outils-projets">

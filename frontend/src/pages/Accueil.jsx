@@ -3,12 +3,17 @@ import useApi from '../hooks/useApi.js'
 import Etat from '../components/Etat.jsx'
 import ProjetCard from '../components/ProjetCard.jsx'
 import { Link } from 'react-router'
+import PageMeta from '../components/PageMeta.jsx'
 
 export default function Accueil({ profil }) {
   const { data: projets, loading, error } = useApi('/api/projets')
 
   return (
     <>
+      <PageMeta
+        titre="Portfolio"
+        description="Découvrez le parcours, les projets et les compétences d'Amadou Fofana en Smart & Green Building."
+      />
       <Hero profil={profil} />
       <section className="accueil-projets" aria-labelledby="accueil-projets-titre">
         <div className="accueil-projets-entete">

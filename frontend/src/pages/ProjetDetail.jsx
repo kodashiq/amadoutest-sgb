@@ -1,6 +1,7 @@
 import { Link, useParams } from 'react-router'
 import useApi from '../hooks/useApi.js'
 import Etat from '../components/Etat.jsx'
+import PageMeta from '../components/PageMeta.jsx'
 
 export default function ProjetDetail() {
   const { slug } = useParams()
@@ -10,6 +11,7 @@ export default function ProjetDetail() {
 
   return (
     <article className="detail page-section">
+      <PageMeta titre={projet.titre} description={projet.resume} />
       <Link className="retour" to="/projets">← Retour aux projets</Link>
       {projet.image && <img className="detail-image" src={projet.image} alt={projet.imageAlt ?? ''} />}
       <h1>{projet.titre}</h1>
