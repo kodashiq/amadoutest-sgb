@@ -4,7 +4,7 @@ Portfolio full-stack React et Express pour le Master Smart & Green Building.
 
 ## Architecture
 
-- `frontend/` : React 19, Vite, React Router
+- `frontend/` : React 19, Vite, React Router, recherche, tri et thème sombre
 - `backend/` : API Express 5, données JSON
 - `docs/PROMPTS.md` : prompts utilisés pendant le projet
 

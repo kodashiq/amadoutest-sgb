@@ -9,6 +9,7 @@ import Projets from './pages/Projets.jsx'
 import ProjetDetail from './pages/ProjetDetail.jsx'
 import Competences from './pages/Competences.jsx'
 import Parcours from './pages/Parcours.jsx'
+import APropos from './pages/APropos.jsx'
 import NotFound from './pages/NotFound.jsx'
 import './App.css'
 
@@ -32,10 +33,16 @@ export default function App() {
           <Route path="/projets/:slug" element={<ProjetDetail />} />
           <Route path="/competences" element={<Competences />} />
           <Route path="/parcours" element={<Parcours />} />
+          <Route path="/a-propos" element={<APropos profil={profil} />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
-      <Footer nom={profil.nom} github={profil.github} />
+      <Footer
+        nom={profil.nom}
+        github={profil.github}
+        linkedin={profil.linkedin}
+        email={profil.email}
+      />
     </>
   )
 }
