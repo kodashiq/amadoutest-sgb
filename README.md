@@ -2,7 +2,8 @@
 
 Portfolio full-stack React et Express pour le Master Smart & Green Building.
 
-Site en ligne : à renseigner après le déploiement Vercel.
+Site en ligne : https://amadoutest-sgb.vercel.app
+API : https://amadoutest-api.vercel.app
 
 ## Architecture
 
@@ -41,12 +42,12 @@ Puis tester les routes avec `backend/tests.http` ou sur http://localhost:3000/ap
 
 ## Déploiement Vercel
 
-Créer deux projets Vercel liés à ce dépôt privé :
+Deux projets Vercel sont déployés depuis ce dépôt privé :
 
-1. Projet API avec **Root Directory** `backend`. Ajouter `FRONTEND_URL` avec l'URL de production du site frontend.
-2. Projet web avec **Root Directory** `frontend`. Ajouter `VITE_API_URL` avec l'URL de production de l'API, sans barre oblique finale.
+1. `amadoutest-api`, avec **Root Directory** `backend` et `FRONTEND_URL=https://amadoutest-sgb.vercel.app`.
+2. `amadoutest-sgb`, avec **Root Directory** `frontend` et `VITE_API_URL=https://amadoutest-api.vercel.app`.
 
-Après avoir défini les variables, redéployer les deux projets. Le fichier `frontend/vercel.json` permet de recharger directement les routes React Router.
+Le fichier `frontend/vercel.json` permet de recharger directement les routes React Router. Les fonctions dans `backend/api/` exposent les routes Express à Vercel.
 
 ## GitHub
 
