@@ -5,9 +5,16 @@ export default function Hero({ profil }) {
       <h1>{profil.nom}</h1>
       <p className="hero-title">{profil.titre}</p>
       <p>{profil.accroche}</p>
-      <a href={profil.github} target="_blank" rel="noreferrer">
-        GitHub
-      </a>
+      <div className="hero-actions">
+        {profil.cv && (
+          <a className="btn btn-ghost" href={profil.cv} download>
+            Télécharger mon CV (PDF)
+          </a>
+        )}
+        <a href={profil.github} target="_blank" rel="noreferrer">
+          GitHub
+        </a>
+      </div>
     </section>
   )
 }

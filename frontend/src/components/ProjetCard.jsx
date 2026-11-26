@@ -1,8 +1,18 @@
 export default function ProjetCard({ projet }) {
-  const { titre, resume, tags, annee, technos } = projet
+  const { titre, resume, tags, annee, technos, image, imageAlt } = projet
 
   return (
     <article className="card projet-card">
+      {image && (
+        <img
+          className="projet-image"
+          src={image}
+          alt={imageAlt ?? ''}
+          width="800"
+          height="450"
+          loading="lazy"
+        />
+      )}
       <div className="projet-head">
         <h3>{titre}</h3>
         <span className="annee">{annee}</span>
