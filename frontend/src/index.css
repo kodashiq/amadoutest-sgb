@@ -18,6 +18,25 @@
   --shadow-card: 0 12px 32px rgb(23 51 44 / 7%);
 }
 
+/* Thème sombre : on redéfinit seulement les variables */
+[data-theme="sombre"] {
+  --fond: #0f1f1a;
+  --carte: #172621;
+  --texte: #e4f0ea;
+  --border: #2a3d37;
+  --muted: #b0c1ba;
+  --accent: #16835d;
+  --accent-light: #1d362e;
+  --shadow-card: 0 12px 32px rgb(0 0 0 / 25%);
+
+  --color-text: var(--texte);
+  --color-muted: var(--muted);
+  --color-background: var(--fond);
+  --color-surface: var(--carte);
+  --color-border: var(--border);
+  --color-accent-light: var(--accent-light);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -31,6 +50,8 @@ body {
   min-width: 320px;
   min-height: 100vh;
   margin: 0;
+  background: var(--color-background);
+  color: var(--color-text);
 }
 
 body,
