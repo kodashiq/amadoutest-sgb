@@ -49,6 +49,18 @@ Retourne un objet JSON valide, avec guillemets doubles et aucune virgule finale,
 
 Elle doit filtrer `projets` selon le titre, le résumé, les tags et les technologies. Affiche un message explicite lorsqu'aucun résultat n'est trouvé. Ne crée pas de nouvelle dépendance.
 
+## P5 — Routes Express
+
+Crée un Router Express dans `backend/routes/contenu.js` qui sert `/api/profil`, `/api/projets`, `/api/projets/:slug`, `/api/competences` et `/api/parcours` à partir de JSON séparés.
+
+Ajoute le filtre `?tag=IoT`, renvoie 404 pour un projet inconnu et crée `backend/tests.http` pour tester toutes les routes. N'utilise que Express, cors et les modules Node natifs.
+
+## P6 — Hook useApi
+
+Écris `frontend/src/hooks/useApi.js` pour appeler une API JSON avec `useEffect` et `fetch`. Retourne `{ data, loading, error }`, annule la mise à jour si le composant est démonté et relance l'appel lorsque le chemin change.
+
+Montre son utilisation dans une page React avec trois états : chargement, erreur et données.
+
 ## Mode sombre
 
 À partir du contexte P0, ajoute un hook React `useTheme` qui initialise le thème depuis `localStorage`, puis utilise les préférences système uniquement si aucune valeur n'est enregistrée.

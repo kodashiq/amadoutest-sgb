@@ -1,0 +1,5 @@
+[
+  { "groupe": "Smart Building", "items": [{ "nom": "GTB / BMS", "niveau": 3 }, { "nom": "KNX", "niveau": 3 }, { "nom": "Revit", "niveau": 3 }, { "nom": "Réseaux connectés", "niveau": 2 }] },
+  { "groupe": "Gestion de projet", "items": [{ "nom": "Lancement de projet", "niveau": 3 }, { "nom": "Suivi de projet", "niveau": 3 }, { "nom": "Planification", "niveau": 3 }, { "nom": "Budget", "niveau": 2 }] },
+  { "groupe": "Énergie & techniques", "items": [{ "nom": "Photovoltaïque", "niveau": 3 }, { "nom": "CVC", "niveau": 3 }, { "nom": "Câblage électrique", "niveau": 3 }, { "nom": "Réseaux informatiques", "niveau": 2 }] }
+]

@@ -1,0 +1,23 @@
+### Accueil de l'API
+GET http://localhost:3000/
+
+### Profil
+GET http://localhost:3000/api/profil
+
+### Tous les projets
+GET http://localhost:3000/api/projets
+
+### Projets filtrés par tag
+GET http://localhost:3000/api/projets?tag=IoT
+
+### Un projet
+GET http://localhost:3000/api/projets/capteurs-co2
+
+### Projet inexistant
+GET http://localhost:3000/api/projets/nexiste-pas
+
+### Compétences
+GET http://localhost:3000/api/competences
+
+### Parcours
+GET http://localhost:3000/api/parcours

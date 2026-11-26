@@ -1,12 +1,15 @@
+import { Link, NavLink } from 'react-router'
+
 export default function Navbar({ nom, theme, onToggleTheme }) {
   return (
     <header className="navbar">
-      <a className="navbar-brand" href="#accueil">
+      <Link className="navbar-brand" to="/">
         {nom}
-      </a>
+      </Link>
       <nav aria-label="Navigation principale">
-        <a href="#projets">Projets</a>
-        <a href="#competences">Compétences</a>
+        <NavLink to="/projets">Projets</NavLink>
+        <NavLink to="/competences">Compétences</NavLink>
+        <NavLink to="/parcours">Parcours</NavLink>
         <button
           className="theme-toggle"
           type="button"
